@@ -1,0 +1,24 @@
+﻿[
+  {
+    "action_type": "ADD/ALT",
+    "address": "3612 48TH AVE SW",
+    "applicant_name": "WOLPA, ZACHARY",
+    "application_permit_number": "6304884",
+    "category": "SINGLE FAMILY / DUPLEX",
+    "description": "Construct alterations to existing single family residence,",
+    "latitude": "47.57163644",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -122.393174,
+        47.571636
+      ]
+    },
+    "longitude": "-122.39317393",
+    "permit_and_complaint_status_url": "http://web6.seattle.gov/dpd/PermitStatus/Project.aspx?id=6304884",
+    "permit_type": "Construction",
+    "status": "Initial Information Collected",
+    "value": "0",
+    "work_type": "No plan review"
+  }
+]    

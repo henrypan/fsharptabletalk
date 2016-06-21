@@ -1,0 +1,41 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soda.android", "SodaAndroid\Soda.android.csproj", "{F0A8A175-B88C-449B-89C0-C52A2C5C1E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SodaAndroid.UITests", "SodaAndroid.UITests\SodaAndroid.UITests.csproj", "{A10A390A-4919-4845-8E90-155C32A60E75}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "HostTest", "HostTest\HostTest.fsproj", "{E21F3EC4-076C-42AB-8C47-C4C33D41F2E0}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "SodaService.android", "SodaService\SodaService.android.fsproj", "{A3A0FD4B-D750-447C-8609-2521DF3DCD6E}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "SodaService.host", "SodaService\SodaService.host.fsproj", "{A6C82E72-0F08-4CFB-A00B-CF519F327A52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0A8A175-B88C-449B-89C0-C52A2C5C1E66}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F0A8A175-B88C-449B-89C0-C52A2C5C1E66}.Debug|x86.Build.0 = Debug|Any CPU
+		{F0A8A175-B88C-449B-89C0-C52A2C5C1E66}.Release|x86.ActiveCfg = Release|Any CPU
+		{F0A8A175-B88C-449B-89C0-C52A2C5C1E66}.Release|x86.Build.0 = Release|Any CPU
+		{A10A390A-4919-4845-8E90-155C32A60E75}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A10A390A-4919-4845-8E90-155C32A60E75}.Debug|x86.Build.0 = Debug|Any CPU
+		{A10A390A-4919-4845-8E90-155C32A60E75}.Release|x86.ActiveCfg = Release|Any CPU
+		{A10A390A-4919-4845-8E90-155C32A60E75}.Release|x86.Build.0 = Release|Any CPU
+		{E21F3EC4-076C-42AB-8C47-C4C33D41F2E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E21F3EC4-076C-42AB-8C47-C4C33D41F2E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{E21F3EC4-076C-42AB-8C47-C4C33D41F2E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{E21F3EC4-076C-42AB-8C47-C4C33D41F2E0}.Release|x86.Build.0 = Release|Any CPU
+		{A3A0FD4B-D750-447C-8609-2521DF3DCD6E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A3A0FD4B-D750-447C-8609-2521DF3DCD6E}.Debug|x86.Build.0 = Debug|Any CPU
+		{A3A0FD4B-D750-447C-8609-2521DF3DCD6E}.Release|x86.ActiveCfg = Release|Any CPU
+		{A3A0FD4B-D750-447C-8609-2521DF3DCD6E}.Release|x86.Build.0 = Release|Any CPU
+		{A6C82E72-0F08-4CFB-A00B-CF519F327A52}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A6C82E72-0F08-4CFB-A00B-CF519F327A52}.Debug|x86.Build.0 = Debug|Any CPU
+		{A6C82E72-0F08-4CFB-A00B-CF519F327A52}.Release|x86.ActiveCfg = Release|Any CPU
+		{A6C82E72-0F08-4CFB-A00B-CF519F327A52}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
