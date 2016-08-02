@@ -20,5 +20,6 @@
     "status": "Initial Information Collected",
     "value": "0",
     "work_type": "No plan review"
-  }
+  },
+  {"application_permit_number":"6274592","category":"SINGLE FAMILY / DUPLEX","description":"Voluntary Seismic Retrofit","permit_and_complaint_status_url":"http://web6.seattle.gov/dpd/PermitStatus/Project.aspx?id=6274592","permit_type":"Construction","value":"0","work_type":"Plan Review"}
 ]    

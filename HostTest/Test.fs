@@ -14,12 +14,20 @@ let ``some test``() =
 let ``request url``() =
     let actor = SodaServiceDefinition.actor
     let items = SodaServiceDefinition.publishedEvent.Subscribe (fun xx -> System.Console.WriteLine ("gotx: " + xx.ToString()));
-    actor.Post (SodaCommand.Request ("1", "adsf"));
+    let parameters =     
+      { SodaRequestParameters.baseUrl = "https://data.seattle.gov/resource/i5jq-ms7b.json"
+        offset = 0<offset>
+        limit = 100<limit>
+        where = "latitude > 0 and application_date is not null"
+        order = "application_date desc" }
+    SodaCommand.Request (parameters)
+    |> actor.Post
+    Threading.Thread.Sleep(1000)
     let task =
       async {
         let! sync = actor.PostAndAsyncReply SodaCommand.Synchronize
         return ()
       }
-    let result = Async.RunSynchronously task
-    printfn "got full result: %A" result
-
+    Async.RunSynchronously task
+    printfn "fnx all done"
+    ()

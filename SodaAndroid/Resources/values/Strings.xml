@@ -4,4 +4,5 @@
 		name="hello">Hello World, Click Me!</string>
 	<string
 		name="app_name">SodaAndroid</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

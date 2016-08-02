@@ -1,5 +1,8 @@
 CSM.SodaDotNet
-FSharp.Core
 Rx-Linq
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.v7.AppCompat
+FSharp.Data
+Zlib.Portable
+Xamarin.GooglePlayServices.Maps
+Flurl

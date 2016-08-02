@@ -1,11 +1,17 @@
 source https://www.nuget.org/api/v2
 
 nuget CSM.SodaDotNet
-nuget FSharp.Core 4.0.0.1
 nuget FSharp.Data
+nuget Flurl
 nuget FsUnit
 nuget NUnit
 nuget Rx-Linq
+nuget Rx-Main
+nuget Xamarin.Android.Support.Percent
+nuget Xamarin.Android.Support.v4
 nuget Xamarin.Android.Support.v7.AppCompat
 nuget Xamarin.Android.Support.v7.RecyclerView
+nuget Xamarin.GooglePlayServices.Maps 30.0.2-alpha1
 nuget Xamarin.UITest
+nuget Zlib.Portable
+

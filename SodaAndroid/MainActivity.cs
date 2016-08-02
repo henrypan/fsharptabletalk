@@ -5,37 +5,27 @@ using Microsoft.FSharp.Core;
 using static SodaServiceDefinition;
 using System;
 using System.Reactive;
+using Android.Support.V4.App;
+using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
+
 namespace SodaAndroid
 {
-  [Activity (Label = "SodaAndroid", MainLauncher = true, Icon = "@mipmap/icon")]
-  public class MainActivity : Activity
+  [Activity (Label = "SodaAndroid", MainLauncher = true)]
+  public class MainActivity : FragmentActivity
   {
-    int count = 1;
-    IDisposable items;
-
     protected override void OnCreate (Bundle savedInstanceState)
     {
       base.OnCreate (savedInstanceState);
 
-      // Set our view from the "main" layout resource
-      SetContentView (Resource.Layout.Main);
+      SetContentView (Resource.Layout.permit_activity);
 
-      // Get our button from the layout resource,
-      // and attach an event to it
-      Button button = FindViewById<Button> (Resource.Id.myButton);
-
-      button.Click += delegate { button.Text = string.Format ("{0} clicks!", count++); };
-
-      var q = FSharpOption<string>.Some ("foo");
-
-      System.Console.WriteLine ("q is " + q);
+      // Start fetching from the server when a new activity starts
+      SodaRequestParameters r = new SodaRequestParameters (SodaServiceDefinition.baseUrl, 0, 10, "latitude is not null and longitude is not null", "application_date desc");
 
       var actor = SodaServiceDefinition.actor;
-      items = SodaServiceDefinition.publishedEvent.Subscribe (xx => System.Console.WriteLine ("gotx: " + xx));
 
-      actor.Post (SodaCommand.NewRequest ("foo", "adsf"));
+      actor.Post (SodaCommand.NewRequest (r));
     }
   }
 }
-
-
