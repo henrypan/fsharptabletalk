@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SodaService.fs" />
-    <Compile Include="SodaDataProvider.fs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\values\" />
